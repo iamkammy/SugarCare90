@@ -1,4 +1,20 @@
 .navbar-brand{
-    color: #1e354b!important;
+    color: white;
     cursor: pointer;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 33444444444;
+    background-color: transparent !important;
+    color: white;
+    border-bottom: 1px solid #eee;
+    border-radius: 20px;
+
+    a{
+        color: white;
+    }
+   
 }
