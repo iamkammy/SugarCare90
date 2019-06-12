@@ -14,7 +14,6 @@ export class AppComponent {
   submitform(form: NgForm) { 
     console.log(form.value);
     form.reset();
-    
   }
 
   i=0
