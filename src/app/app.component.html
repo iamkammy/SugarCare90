@@ -111,6 +111,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+
             <div class="modal-body">
                     <form #formdata="ngForm">
                         <div class="form-group">
@@ -135,7 +136,7 @@
                           </form>
             </div>
             <div class="modal-footer">
-              <button type="button" (click)="submitform(formdata)" class="btn btn-secondary" >Close</button>
+              <button type="button" (click)="submitform(formdata)" class="btn btn-secondary" data-dismiss="modal" >Close</button>
               <button type="button" (click)="submitform(formdata)" class="btn btn-primary">Save changes</button>
             </div>
           </div>

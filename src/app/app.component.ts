@@ -14,19 +14,20 @@ export class AppComponent {
   submitform(form: NgForm) { 
     console.log(form.value);
     form.reset();
-    $('#exampleModalCenter').modal('hide')
+    
   }
 
+  i=0
   openModal(form: NgForm) {
-    let that=this;
-    $("#exampleModalCenter")
-      .modal({
-        keyboard: false,
-        toggle: true
-      })
-      .on("hidden.bs.modal", function(e) {
-        // console.log("dsdsd");
-        that.submitform(form);
+    let x= $("#exampleModalCenter")
+    .modal({
+      keyboard: false,
+      toggle: true
+    })
+    .on("hidden.bs.modal", (e)=> {
+      console.log(this.i++)
+        x.modal('dispose');
+        this.submitform(form);
       })
   }
 }
